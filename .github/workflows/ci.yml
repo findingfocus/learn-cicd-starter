@@ -34,4 +34,4 @@ jobs:
           go-version: "1.23.0"
 
       - name: "Style"
-        run: go test -cover ./...
+        run: test -z $(go fmt ./...)
