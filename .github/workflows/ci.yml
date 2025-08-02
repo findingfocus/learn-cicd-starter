@@ -20,3 +20,10 @@ jobs:
 
       - name: "API Tests"
         run: go test -cover ./...
+
+    name: Styles
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Styles"
+        run: test -z $(go fmt ./...)
